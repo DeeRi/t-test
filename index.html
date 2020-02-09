@@ -10,7 +10,12 @@
   <body>
     <header></header>
     <main>
-      <form class="registration-form" action="URL" method="POST" onsubmit="return validateForm()">
+      <form
+        class="registration-form"
+        action="URL"
+        method="POST"
+        onsubmit="return validateForm()"
+      >
         <h1 class="registration-form__title">Sign up</h1>
         <ul class="registration-form__list">
           <li class="registration-form__item">
@@ -24,7 +29,11 @@
 
           <li class="registration-form__item">
             <label class="registration-form__name" for="email">Email</label>
-            <input class="registration-form__input" id="email" type="text" />
+            <input
+              class="registration-form__input registration-form__input--email"
+              id="email"
+              type="text"
+            />
           </li>
 
           <li class="registration-form__item">
@@ -69,10 +78,7 @@
             <input class="registration-form__input" id="zipcode" type="text" />
           </li>
         </ul>
-        <button
-          class="registration-form__button button"
-          type="submit"
-        >
+        <button class="registration-form__button button" type="submit">
           Sign up
         </button>
       </form>
