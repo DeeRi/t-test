@@ -5,5 +5,11 @@ body {
 }
 
 body {
-    background-color: $white-two;
+  background-color: $white-two;
+  font-family: $main-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: $primary-text-color;
 }

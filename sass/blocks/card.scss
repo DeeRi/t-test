@@ -1,0 +1,23 @@
+.card {
+  box-sizing: border-box;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  position: fixed;
+  width: 608px;
+  height: 232px;
+  left: 50%;
+  top: 232px;
+
+  background: $elements-background;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}

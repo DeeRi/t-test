@@ -1,7 +1,66 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F1F1;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.registration-form {
+  background-color: #ffffff;
+  width: 324px;
+  margin-left: 151px;
+  margin-top: 50px;
+  margin-bottom: 91px;
+}
+
+.registration-form__title {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+}
+
 .registration-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.registration-form__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .registration-form__name {
@@ -9,9 +68,52 @@
   font-size: 20px;
   line-height: 23px;
 }
+.registration-form__name--required::after {
+  content: "*";
+  color: red;
+}
+
+.registration-form__input {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
+  box-sizing: border-box;
+  width: 324px;
+  padding: 20px 24px;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+}
+.registration-form__input:focus {
+  border: #0056d8;
+}
+
+.card {
+  box-sizing: border-box;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  position: fixed;
+  width: 608px;
+  height: 232px;
+  left: 50%;
+  top: 232px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
 
 .button {
-  padding: 20px 124px;
+  padding: 20px 24px;
+  width: 324px;
   border: none;
   border-radius: 0px 20px;
   background: #0056d8;
