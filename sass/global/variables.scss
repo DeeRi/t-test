@@ -1,5 +1,6 @@
 //colors
 $white: #ffffff;
+$white-two: #F1F1F1;
 $grey: #888888;
 $light-grey: #c4c4c4;
 $lighter-grey: #c1c1c1;
@@ -8,7 +9,7 @@ $red: #e90000;
 $blue: #0056d8;
 $dark-blue: #003585;
 
-
+$body-background: $white-two;
 $primary-text-color: $dark;
 $capture-color: $grey;
 $button: $blue;
@@ -16,3 +17,8 @@ $button-text: $white;
 $button-hover: $dark-blue;
 $button-active: $lighter-grey;
 $button-push: $light-grey;
+
+//fonts
+$roboto: "Roboto", "Arial", sans-serif;
+
+$main-font: $roboto;
