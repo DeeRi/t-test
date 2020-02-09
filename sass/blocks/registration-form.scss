@@ -1,0 +1,9 @@
+.registration-form__list {
+  @include reset-list;
+}
+
+.registration-form__name {
+  color: $capture-color;
+  font-size: 20px;
+  line-height: 23px;
+}

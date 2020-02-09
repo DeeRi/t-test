@@ -1,0 +1,31 @@
+.registration-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.registration-form__name {
+  color: #888888;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.button {
+  padding: 20px 124px;
+  border: none;
+  border-radius: 0px 20px;
+  background: #0056d8;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #003585;
+}
+.button:active, .button:focus {
+  background-color: #c1c1c1;
+}
+
+/*# sourceMappingURL=style.css.map */

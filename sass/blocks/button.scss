@@ -1,0 +1,21 @@
+.button {
+  padding: 20px 124px;
+
+  border: none;
+  border-radius: 0px 20px;
+
+  background: $button;
+  color: $button-text;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+  &:active,
+  &:focus {
+    background-color: $button-active;
+  }
+}
