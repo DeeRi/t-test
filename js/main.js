@@ -36,6 +36,7 @@ function validateForm() {
 }
 
 //Datepicker
+
 $(function() {
   $( ".registration-form__input--date" ).datepicker({
   dateFormat : 'dd/mm/yy',
@@ -46,6 +47,7 @@ $(function() {
  });
 
  //Card filling with the information
+ 
  email.oninput = function() {
   emailUser.innerHTML = email.value;
 };

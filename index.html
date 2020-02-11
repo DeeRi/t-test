@@ -13,126 +13,145 @@
   </head>
   <body>
     <header></header>
-    <h1 class="visually-hidden">Registration form</h1>
-    <article class="card">
-      <h2 class="card__title">New User</h2>
-      <p class="card__info">
-        <span class="card__info--name" id="userName">Firstname</span
-        ><span class="card__info--surname" id="surnameUser">Lastname</span
-        >/<span class="card__info--login" id="loginUser">SomeCoolLogin</span>
-      </p>
-      <p class="card__info" id="emailUser">SomeCool@gmail.com</p>
-    </article>
     <main>
-      <form
-        class="registration-form"
-        action="URL"
-        method="POST"
-        onsubmit="return validateForm()"
-      >
-        <h2 class="registration-form__title">Sign up</h2>
-        <ul class="registration-form__list">
-          <li class="registration-form__item">
-            <label
-              class="registration-form__name registration-form__name--required"
-              for="login"
-              >Login</label
+      <section class="section registration">
+        <h1 class="section__title registration__title visually-hidden">
+          User registration
+        </h1>
+        <div class="registration__card card">
+          <h2 class="card__title">New User</h2>
+          <p class="card__info">
+            <span class="card__name" id="userName">Firstname</span
+            ><span class="card__surname" id="surnameUser">Lastname</span
+            >/<span class="card__login" id="loginUser"
+              >SomeCoolLogin</span
             >
-            <input
-              class="registration-form__input registration-form__input--login"
-              id="login"
-              type="text"
-              placeholder="John_Somesnow"
-            />
-          </li>
+          </p>
+          <p class="card__email" id="emailUser">SomeCool@gmail.com</p>
+        </div>
+        <form
+          class="registration__form registration-form"
+          action="URL"
+          method="POST"
+          onsubmit="return validateForm()"
+        >
+          <h2 class="registration-form__title">Sign up</h2>
+          <ul class="registration-form__list">
+            <li class="registration-form__item">
+              <label
+                class="registration-form__name registration-form__name--required"
+                for="login"
+                >Login</label
+              >
+              <input
+                class="registration-form__input registration-form__input--login"
+                id="login"
+                type="text"
+                placeholder="SomeCool"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label
-              class="registration-form__name registration-form__name--required"
-              for="email"
-              >Email</label
-            >
-            <input
-              class="registration-form__input registration-form__input--email"
-              id="email"
-              type="text"
-              placeholder="SomeCool@gmail.com"
-            />
-          </li>
+            <li class="registration-form__item">
+              <label
+                class="registration-form__name registration-form__name--required"
+                for="email"
+                >Email</label
+              >
+              <input
+                class="registration-form__input registration-form__input--email"
+                id="email"
+                type="text"
+                placeholder="SomeCool@gmail.com"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="password"
-              >Password</label
-            >
-            <input
-              class="registration-form__input"
-              id="password"
-              type="password"
-              placeholder=""
-            />
-          </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="password"
+                >Password</label
+              >
+              <input
+                class="registration-form__input"
+                id="password"
+                type="password"
+                placeholder=""
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="name">First name</label>
-            <input
-              class="registration-form__input"
-              id="user"
-              type="text"
-              placeholder="John"
-            />
-          </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="user"
+                >First name</label
+              >
+              <input
+                class="registration-form__input"
+                id="user"
+                type="text"
+                placeholder="Konstantin"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="surname"
-              >Last name</label
-            >
-            <input
-              class="registration-form__input"
-              id="surname"
-              type="text"
-              placeholder="Snow"
-            />
-          </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="surname"
+                >Last name</label
+              >
+              <input
+                class="registration-form__input"
+                id="surname"
+                type="text"
+                placeholder="Konstantinopolsky"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="country">Country</label>
-            <input class="registration-form__input" id="country" type="text" />
-          </li>
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="city">City</label>
-            <input class="registration-form__input" id="city" type="text" />
-          </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="country"
+                >Country</label
+              >
+              <input
+                class="registration-form__input"
+                id="country"
+                type="text"
+                placeholder="Not selected"
+              />
+            </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="city">City</label>
+              <input
+                class="registration-form__input"
+                id="city"
+                type="text"
+                placeholder="Not selected"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="datepicker"
-              >Date of birth</label
-            >
-            <input
-              class="registration-form__input registration-form__input--date"
-              id="datepicker"
-              type="text"
-              name="date"
-              class="date"
-              placeholder="DD/MM/YYYY"
-            />
-          </li>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="datepicker"
+                >Date of birth</label
+              >
+              <input
+                class="registration-form__input registration-form__input--date"
+                id="datepicker"
+                type="text"
+                name="date"
+                placeholder="Not selected"
+              />
+            </li>
 
-          <li class="registration-form__item">
-            <label class="registration-form__name" for="zipcode"
-              >Zip code</label
-            >
-            <input
-              class="registration-form__input"
-              id="zipcode"
-              type="text"
-              placeholder="421233"
-            />
-          </li>
-        </ul>
-        <button class="registration-form__button button" type="submit">
-          Sign up
-        </button>
-      </form>
+            <li class="registration-form__item">
+              <label class="registration-form__name" for="zipcode"
+                >Zip code</label
+              >
+              <input
+                class="registration-form__input"
+                id="zipcode"
+                type="text"
+                placeholder="Enter code"
+              />
+            </li>
+          </ul>
+          <button class="registration-form__button button" type="submit">
+            Sign up
+          </button>
+        </form>
+      </section>
     </main>
     <footer></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

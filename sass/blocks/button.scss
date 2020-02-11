@@ -14,8 +14,15 @@
   &:hover {
     background-color: $button-hover;
   }
-  &:active,
+  
+  &:active {
+    background-color: $button-push;
+    width: 292px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
   &:focus {
-    background-color: $button-active;
+    background-color: $button-focus;
   }
 }

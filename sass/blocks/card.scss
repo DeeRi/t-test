@@ -2,17 +2,16 @@
   box-sizing: border-box;
   padding-top: 54px;
   padding-bottom: 54px;
-  position: fixed;
   width: 608px;
   height: 232px;
-  left: 50%;
-  top: 232px;
 
   background: $elements-background;
-  border-radius: 10px;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+
+  box-shadow: 0px 0px 40px rgba(196, 196, 196, 0.4);
+  border-radius: 10px;
 }
 
 .card__title {
@@ -20,4 +19,26 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
+  padding-bottom: 24px;
+}
+
+.card__info {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.card__name,
+.card__surname {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.card__login {
+  display: inline-block;
+  padding-left: 5px;
+  color: $card-login;
+}
+
+.card__email {
+  margin: 0;
 }

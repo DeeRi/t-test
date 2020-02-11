@@ -1,13 +1,6 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin-300.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff");
@@ -35,18 +28,44 @@ body {
   color: #333333;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 162px;
+  padding-bottom: 162px;
+}
+
+.registration__card {
+  margin-bottom: 42px;
+}
+
 .registration-form {
   background-color: #ffffff;
-  width: 324px;
-  margin-left: 151px;
-  margin-top: 50px;
-  margin-bottom: 91px;
+  width: 608px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  box-shadow: 0px 0px 40px rgba(196, 196, 196, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .registration-form__title {
   margin: 0;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 48px;
   text-align: center;
   font-size: 30px;
   line-height: 35px;
@@ -56,11 +75,19 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px;
 }
 
 .registration-form__item {
   display: flex;
   flex-direction: column;
+  padding-bottom: 32px;
+}
+.registration-form__item:last-child {
+  padding-bottom: 0;
 }
 
 .registration-form__name {
@@ -84,24 +111,25 @@ body {
   border: 1px solid #c1c1c1;
   border-radius: 4px;
 }
+.registration-form__input::placeholder {
+  color: #c1c1c1;
+}
 .registration-form__input:focus {
-  border: #0056d8;
+  border: #003585;
 }
 
 .card {
   box-sizing: border-box;
   padding-top: 54px;
   padding-bottom: 54px;
-  position: fixed;
   width: 608px;
   height: 232px;
-  left: 50%;
-  top: 232px;
   background: #ffffff;
-  border-radius: 10px;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  box-shadow: 0px 0px 40px rgba(196, 196, 196, 0.4);
+  border-radius: 10px;
 }
 
 .card__title {
@@ -109,6 +137,28 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
+  padding-bottom: 24px;
+}
+
+.card__info {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.card__name,
+.card__surname {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.card__login {
+  display: inline-block;
+  padding-left: 5px;
+  color: #888888;
+}
+
+.card__email {
+  margin: 0;
 }
 
 .button {
@@ -126,7 +176,13 @@ body {
 .button:hover {
   background-color: #003585;
 }
-.button:active, .button:focus {
+.button:active {
+  background-color: #c4c4c4;
+  width: 292px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.button:focus {
   background-color: #c1c1c1;
 }
 
