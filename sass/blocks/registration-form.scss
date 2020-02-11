@@ -46,7 +46,9 @@
 }
 
 .registration-form__input {
-  font-family: $roboto;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   color: $primary-text-color;

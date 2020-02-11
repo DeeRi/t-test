@@ -102,6 +102,8 @@ body {
 
 .registration-form__input {
   font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   color: #333333;
@@ -168,6 +170,7 @@ body {
   border-radius: 0px 20px;
   background: #0056d8;
   color: #ffffff;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
